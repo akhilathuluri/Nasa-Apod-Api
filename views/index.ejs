@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+   <meta charset="utf-8">
+   <title>Nasa Apod</title>
+   <link rel="stylesheet" href="styles/index.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+   <div class="container-fluid">
+      <h2 style="color: white;">Welcome To</h2>
+      <h2><span class="auto" style="color: white;">Nasa Apod</span></h2>
+   </div>
+   <div class="wrapper">
+      <div class="input-data">
+         <form id="nameForm" action="/Nasa-Apod" method="GET">
+            <input type="text" id="nameInput" name="name" required>
+            <label for="nameInput">Enter Your Name</label>
+            <button type="submit">Submit</button>
+         </form>
+      </div>
+   </div>
+   
+
+   
+
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+   <script>
+      // Get the form element and listen for form submission
+      const form = document.getElementById('nameForm');
+      form.addEventListener('submit', function (event) {
+         event.preventDefault(); // Prevent the form from submitting normally
+
+         const nameInput = document.getElementById('nameInput');
+         const name = nameInput.value;
+
+         // Store the name in local storage
+         localStorage.setItem('name', name);
+
+         // Redirect to another page
+         window.location.href = `/Nasa-Apod?name=${encodeURIComponent(name)}`;
+      });
+
+      var typed = new Typed(".auto", {
+          strings: ["Nasa Apod", "Astronomy Picture of the Day", "Exploring the Colors of the Universe"],
+          typeSpeed: 100,
+          backSpeed: 100,
+          loop: true,
+        });
+   </script>
+</body>
+
+</html>
