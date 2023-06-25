@@ -89,3 +89,16 @@ Contributions are welcome! Please open a pull request on GitHub if you have any 
 The project is licensed under the ISC license.
 
 I hope this documentation is helpful. Please let me know if you have any questions.
+
+Output - 
+![1](https://github.com/akhilathuluri/Nasa-Apod-Api/assets/89147384/80b02db8-dc5b-497c-a996-0cfecbea0007)
+
+![2](https://github.com/akhilathuluri/Nasa-Apod-Api/assets/89147384/7b12353c-02d4-48e8-910d-a708adabff85)
+
+![3](https://github.com/akhilathuluri/Nasa-Apod-Api/assets/89147384/8f7f6cbc-8b70-4e8f-9ef6-8fe33bf9bb96)
+
+
+
+
+
+
